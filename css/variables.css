@@ -1,0 +1,31 @@
+:root {
+  /* Colors - Amazon Palette */
+  --amz-dark: #131921;       /* Main Nav */
+  --amz-dark-light: #232f3e; /* Sub Nav / Footer */
+  --amz-accent: #febd69;     /* Buttons, highlights */
+  --amz-accent-hover: #f3a847;
+  --amz-bg: #eaeded;         /* Main body background */
+  --amz-text: #0F1111;       /* Main text */
+  --amz-link: #007185;       /* Link colors */
+  --amz-link-hover: #c40000;
+  --amz-white: #ffffff;
+  --amz-border: #dddddd;
+
+  /* Typography */
+  --font-family-base: "Amazon Ember", Arial, sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border Radius */
+  --border-radius-sm: 2px;
+  --border-radius-md: 4px;
+  --border-radius-lg: 8px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease-in-out;
+}

@@ -1,0 +1,185 @@
+/* Navigation Bar Styles */
+.navbar {
+  background-color: var(--amz-dark);
+  color: var(--amz-white);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top Belt - Main Nav */
+.nav-main {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+}
+
+/* Nav Hover Effects */
+.nav-item {
+  border: 1px solid transparent;
+  padding: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-item:hover {
+  border: 1px solid var(--amz-white);
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--amz-white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo span {
+  color: var(--amz-accent);
+}
+
+/* Search Bar */
+.nav-search {
+  flex: 1;
+  display: flex;
+  height: 40px;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  background-color: var(--amz-white);
+}
+
+.nav-search:focus-within {
+  box-shadow: 0 0 0 2px var(--amz-accent);
+}
+
+.search-select {
+  background-color: #f3f3f3;
+  border: none;
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  padding: 0 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-btn {
+  background-color: var(--amz-accent);
+  border: none;
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: var(--amz-accent-hover);
+}
+
+.search-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--amz-dark);
+}
+
+/* Account & Orders */
+.nav-text-small {
+  font-size: 0.75rem;
+  line-height: 14px;
+}
+
+.nav-text-large {
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+/* Cart */
+.nav-cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  color: var(--amz-white);
+}
+
+.cart-icon {
+  width: 38px;
+  height: 26px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cart-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--amz-white);
+}
+
+.cart-count {
+  position: absolute;
+  top: -4px;
+  left: 14px;
+  color: var(--amz-accent);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cart-text {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+/* Secondary Belt - Categories */
+.nav-secondary {
+  background-color: var(--amz-dark-light);
+  display: flex;
+  padding: 5px 15px;
+  align-items: center;
+  gap: 15px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-secondary a {
+  color: var(--amz-white);
+  font-size: 0.85rem;
+  text-decoration: none;
+  padding: 5px 8px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+.nav-secondary a:hover {
+  border: 1px solid var(--amz-white);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-main {
+    flex-wrap: wrap;
+  }
+  
+  .nav-search {
+    order: 3;
+    width: 100%;
+    flex: none;
+    margin-top: 10px;
+  }
+
+  .nav-item.returns {
+    display: none;
+  }
+}
