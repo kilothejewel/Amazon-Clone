@@ -7,9 +7,11 @@ function ProductGrid({ addToCart }) {
   // We set up the UI, you will write the logic to filter `displayProducts` based on the `activeCategory`.
   const [activeCategory, setActiveCategory] = useState('All');
   
-  // HINT FOR LATER: Instead of just returning allProducts, 
-  // you will filter it based on activeCategory!
-  const displayProducts = allProducts; 
+
+  const displayProducts = activeCategory === 'All'
+    ? allProducts
+    : all
+    .filter(product => product.category === activeCategory); 
 
   const categories = ['All', 'Electronics', 'Home & Kitchen', 'Books'];
 
