@@ -10,8 +10,8 @@ function Navbar({ cartCount, onCartClick, isDarkMode, toggleTheme }) {
         <a href="/" className="nav-logo nav-item">
           <img 
             src="/assets/images/amazon-logo-colored-light-svg.svg" 
-            alt="amazon-logo" 
-            className="amazon-logo"
+            alt="nav-logo" 
+            className="nav-logo"
             style={isDarkMode ? { filter: 'invert(1) brightness(2)' } : {}}
           />
         </a>
