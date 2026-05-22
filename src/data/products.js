@@ -35,7 +35,7 @@ export const products = [
     id: "5",
     title: "Instant Pot Duo 7-in-1 Electric Pressure Cooker, 6 Quart",
     price: 99.99,
-    imageURL: "https://m.media-amazon.com/images/I/71WtwEvIGvL._AC_SL1500_.jpg",
+    imageURL: "https://m.media-amazon.com/images/I/718jG-GisTL._AC_SY300_SX300_QL70_ML2_.jpg",
     rating: 4.7,
     category: "Home & Kitchen"
   },
@@ -43,7 +43,7 @@ export const products = [
     id: "6",
     title: "Dyson V11 Animal Cordless Vacuum Cleaner",
     price: 499.00,
-    imageURL: "https://m.media-amazon.com/images/I/71I3u70mSGL._AC_SL1500_.jpg",
+    imageURL: "https://m.media-amazon.com/images/I/51VJ6pLoFML._AC_SX679_.jpg",
     rating: 4.8,
     category: "Home & Kitchen"
   },
