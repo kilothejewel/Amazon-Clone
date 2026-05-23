@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.css';
+import amazonLogo from '../../assets/images/amazon-logo-colored-dark-svg.svg';
 
 function Navbar({ cartCount, onCartClick, isDarkMode, toggleTheme }) {
   return (
@@ -9,7 +10,7 @@ function Navbar({ cartCount, onCartClick, isDarkMode, toggleTheme }) {
         {/* Logo */}
         <a href="/" className="nav-logo nav-item">
           <img 
-            src=".\assets\images\amazon-logo-colored-dark-svg.svg" 
+            src={amazonLogo} 
             alt="nav-logo" 
             className="nav-logo"
             style={isDarkMode ? { filter: 'invert(1) brightness(2)' } : {}}

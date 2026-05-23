@@ -10,8 +10,7 @@ function ProductGrid({ addToCart }) {
 
   const displayProducts = activeCategory === 'All'
     ? allProducts
-    : all
-    .filter(product => product.category === activeCategory); 
+    : allProducts.filter(product => product.category === activeCategory); 
 
   const categories = ['All', 'Electronics', 'Home & Kitchen', 'Books'];
 
